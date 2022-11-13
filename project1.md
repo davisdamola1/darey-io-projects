@@ -21,3 +21,6 @@
 ![Virtual Host config](https://user-images.githubusercontent.com/116941965/201547713-1d3ae822-56f1-41bd-b83c-656b7c1debbd.PNG)
 ![Virtual Host config2](https://user-images.githubusercontent.com/116941965/201547778-651e3292-47ba-4a05-8e5c-aae277f7875e.PNG)
 ![Apache virtual host working](https://user-images.githubusercontent.com/116941965/201547807-98d90247-87d8-4dca-b117-82c277a3d25b.PNG)
+
+#### Step 5: ENABLE PHP ON THE WEBSITE
+![index php file created](https://user-images.githubusercontent.com/116941965/201547918-2df60710-6041-45d6-bff5-e8abde15143c.PNG)

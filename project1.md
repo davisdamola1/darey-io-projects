@@ -12,3 +12,7 @@
 ![mysql login](https://user-images.githubusercontent.com/116941965/201547366-9b0a9d1e-2784-4c26-9865-4f0d1871d58b.PNG)
 ![Mysql secure install](https://user-images.githubusercontent.com/116941965/201547393-09d0a4a7-63bf-4a91-ad99-bb6a5ca3f8b1.PNG)
 ![Mysql login with password](https://user-images.githubusercontent.com/116941965/201547417-37d5a002-1ac6-4af3-9c1a-7995686598d9.PNG)
+
+#### Step 3: INSTALLING PHP
+![php installed](https://user-images.githubusercontent.com/116941965/201547511-13831084-2231-4d1e-82c7-1e35b3dac6da.PNG)
+![php version](https://user-images.githubusercontent.com/116941965/201547542-c8cbce56-af41-4f99-a8b9-b4d919871d6b.PNG)

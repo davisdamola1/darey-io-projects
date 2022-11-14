@@ -13,3 +13,8 @@
 ![LEMP Mysql login with password](https://user-images.githubusercontent.com/116941965/201556031-4141f994-beac-4b86-be53-9a532b384295.PNG)
 #### STEP 3: Installing php
 ![LEMP php installed](https://user-images.githubusercontent.com/116941965/201556110-ec0ba507-9315-41b0-9235-5dc233af096d.PNG)
+
+#### STEP 4: Configuring Nginx to use php processor
+![Nginx server block config](https://user-images.githubusercontent.com/116941965/201556274-b82a98c7-4869-4d77-906d-33a682a586f1.PNG)
+![Nginx test config](https://user-images.githubusercontent.com/116941965/201556303-8c89ae02-33ca-40be-925f-49ca7ae0f9d7.PNG)
+![Nginx server block running](https://user-images.githubusercontent.com/116941965/201556330-c95220a1-24b4-44b2-8681-8d7ca7864c9e.PNG)

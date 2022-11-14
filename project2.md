@@ -18,3 +18,13 @@
 ![Nginx server block config](https://user-images.githubusercontent.com/116941965/201556274-b82a98c7-4869-4d77-906d-33a682a586f1.PNG)
 ![Nginx test config](https://user-images.githubusercontent.com/116941965/201556303-8c89ae02-33ca-40be-925f-49ca7ae0f9d7.PNG)
 ![Nginx server block running](https://user-images.githubusercontent.com/116941965/201556330-c95220a1-24b4-44b2-8681-8d7ca7864c9e.PNG)
+
+#### STEP 5: Testing php with Nginx
+![Nginx php](https://user-images.githubusercontent.com/116941965/201556613-ace6664b-9b12-40c0-b372-aae74f72d0a0.PNG)
+![nginx php works](https://user-images.githubusercontent.com/116941965/201556663-3bb004c7-8e1c-4f0e-8ed0-e7bfcb6a901e.PNG)
+
+#### STEP 6:  RETRIEVING DATA FROM MYSQL DATABASE WITH PHP
+![mysql SHOW DATABASE](https://user-images.githubusercontent.com/116941965/201556772-36edd498-7cf4-49d7-b494-3387eea6ae08.PNG)
+![Mysql table results](https://user-images.githubusercontent.com/116941965/201556823-93f0ed9c-7f2c-457a-8ce1-8495b78b9439.PNG)
+![Mysql php config](https://user-images.githubusercontent.com/116941965/201557005-1a91a49a-91bd-4622-9060-d48d99b2fd08.PNG)
+![Msql table retrieved on server](https://user-images.githubusercontent.com/116941965/201557043-b5718450-302e-4173-8c43-de1aa87a1f2e.PNG)

@@ -11,3 +11,5 @@
 ![LEMP Mysql open](https://user-images.githubusercontent.com/116941965/201555957-f8c328cf-1d3c-4a1f-bb7b-e98792907755.PNG)
 ![LEMP Mysql secure install](https://user-images.githubusercontent.com/116941965/201555995-40503945-10af-463b-836a-613149254558.PNG)
 ![LEMP Mysql login with password](https://user-images.githubusercontent.com/116941965/201556031-4141f994-beac-4b86-be53-9a532b384295.PNG)
+#### STEP 3: Installing php
+![LEMP php installed](https://user-images.githubusercontent.com/116941965/201556110-ec0ba507-9315-41b0-9235-5dc233af096d.PNG)

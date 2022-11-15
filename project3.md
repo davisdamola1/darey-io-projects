@@ -17,3 +17,18 @@
 ![MERN step 1n](https://user-images.githubusercontent.com/116941965/201960831-89c743be-0bfb-4d22-9cae-96a77bf41941.PNG)
 ![MERN step 1o](https://user-images.githubusercontent.com/116941965/201960960-605b2a8d-f5f4-407c-92a5-79a86e987bfd.PNG)
 ![MERN step 1p](https://user-images.githubusercontent.com/116941965/201961037-d722352a-bc2e-4003-87c6-99603f0e5839.PNG)
+
+##### STEP 2
+![MERN step 2a](https://user-images.githubusercontent.com/116941965/201961370-66aa7681-090c-4817-9bdf-895d7b7352b9.PNG)
+![MERN step 2b](https://user-images.githubusercontent.com/116941965/201961453-6711fdab-78d3-45a4-a162-f47702442e71.PNG)
+![MERN step 2c](https://user-images.githubusercontent.com/116941965/201961517-3fbbc8a7-fd23-49f7-b3e4-26560137965f.PNG)
+![MERN step 2d](https://user-images.githubusercontent.com/116941965/201961894-a8b35beb-400d-4fc2-a580-aaf8eabd8f37.PNG)
+![MERN step 2e](https://user-images.githubusercontent.com/116941965/201961898-7dee00cd-7c4b-4443-a6db-b932672a5ed9.PNG)
+![MERN step 2f](https://user-images.githubusercontent.com/116941965/201961902-f1197ce8-d770-42ec-a7b7-8f5356252e4d.PNG)
+![MERN step 2g](https://user-images.githubusercontent.com/116941965/201961907-6fa2b5ee-bc98-4e67-9e0d-f868d6523760.PNG)
+![MERN step 2h](https://user-images.githubusercontent.com/116941965/201961909-b0507d15-0cc7-4533-a16a-1185c8664c97.PNG)
+![MERN step 2i](https://user-images.githubusercontent.com/116941965/201961911-940a8be8-ee03-4102-90f2-cf977acdfa74.PNG)
+![MERN step 2j](https://user-images.githubusercontent.com/116941965/201961912-7ba86a9f-7d1c-4952-bb96-c57eca1d0bdb.PNG)
+![MERN step 2k](https://user-images.githubusercontent.com/116941965/201961915-3e60d4c0-c4d0-4c57-ab1e-b238b7fcf2ba.PNG)
+![MERN step 2l](https://user-images.githubusercontent.com/116941965/201961920-48f8b1bc-7fcc-438f-a431-636f16969108.PNG)
+![MERN step 2m](https://user-images.githubusercontent.com/116941965/201962269-4f602e04-30af-40c1-bef6-0937207bd805.PNG)

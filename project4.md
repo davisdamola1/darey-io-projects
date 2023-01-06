@@ -17,6 +17,8 @@ sudo apt upgrade
 ```
 sudo apt install -y nodejs
 ```
+![MEAN - Step 2 - Install Nodejs](https://user-images.githubusercontent.com/116941965/211075270-e7bae615-cfe9-4327-b8d0-ee79a4a25a6e.PNG)
+
 
 
 ##### Body-parser package was installed with node package manager but I get this message:

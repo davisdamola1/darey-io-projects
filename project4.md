@@ -82,7 +82,75 @@ sudo npm install express mongoose
 At this point, even though I had gotten errors, I thought it had installed:
 ![MEAN - Step 9 - Install express and Mongoose](https://user-images.githubusercontent.com/116941965/211083885-edefdcaa-8289-4b91-8547-162e8dbf2301.PNG)
 I found out reason in later steps (Keep reading!).
+* Within the 'Books' directory, I created 'apps' folder. Within the 'apps' folder, I added a file named route.js and added code:
+```
+mkdir apps && cd apps
+```
+```
+vi routes.js
+```
+```
+var Book = require('./models/book');
+module.exports = function(app) {
+  app.get('/book', function(req, res) {
+    Book.find({}, function(err, result) {
+      if ( err ) throw err;
+      res.json(result);
+    });
+  }); 
+  app.post('/book', function(req, res) {
+    var book = new Book( {
+      name:req.body.name,
+      isbn:req.body.isbn,
+      author:req.body.author,
+      pages:req.body.pages
+    });
+    book.save(function(err, result) {
+      if ( err ) throw err;
+      res.json( {
+        message:"Successfully added book",
+        book:result
+      });
+    });
+  });
+  app.delete("/book/:isbn", function(req, res) {
+    Book.findOneAndRemove(req.query, function(err, result) {
+      if ( err ) throw err;
+      res.json( {
+        message: "Successfully deleted the book",
+        book: result
+      });
+    });
+  });
+  var path = require('path');
+  app.get('*', function(req, res) {
+    res.sendfile(path.join(__dirname + '/public', 'index.html'));
+  });
+};
+In the ‘apps’ folder, create a folder named models
 
+mkdir models && cd models
+Create a file named book.js
+
+vi book.js
+Copy and paste the code below into ‘book.js’
+
+var mongoose = require('mongoose');
+var dbHost = 'mongodb://localhost:27017/test';
+mongoose.connect(dbHost);
+mongoose.connection;
+mongoose.set('debug', true);
+var bookSchema = mongoose.Schema( {
+  name: String,
+  isbn: {type: String, index: true},
+  author: String,
+  pages: Number
+});
+var Book = mongoose.model('Book', bookSchema);
+module.exports = mongoose.model('Book', bookSchema);
+```
+![MEAN - Step 10 - apps directory created and routes js file created in apps](https://user-images.githubusercontent.com/116941965/211085215-5cbbb6e3-5bb2-4c0d-9291-febc241dd734.PNG)
+![MEAN - Step 11 - code added to routes js file](https://user-images.githubusercontent.com/116941965/211085296-ea9b1610-1c33-41cf-8be3-14a20e45553a.PNG)
 
 
 

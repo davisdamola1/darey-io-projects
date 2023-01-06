@@ -153,6 +153,34 @@ module.exports = mongoose.model('Book', bookSchema);
 ![MEAN - Step 10 - apps directory created and routes js file created in apps](https://user-images.githubusercontent.com/116941965/211085215-5cbbb6e3-5bb2-4c0d-9291-febc241dd734.PNG)
 ![MEAN - Step 11 - code added to routes js file](https://user-images.githubusercontent.com/116941965/211085296-ea9b1610-1c33-41cf-8be3-14a20e45553a.PNG)
 
+* Within the 'apps' folder, I created a folder named 'models'. Within the 'models' folder, I added a file name book.js and added code:
+```
+mkdir models && cd models
+```
+```
+vi book.js
+```
+```
+var mongoose = require('mongoose');
+var dbHost = 'mongodb://localhost:27017/test';
+mongoose.connect(dbHost);
+mongoose.connection;
+mongoose.set('debug', true);
+var bookSchema = mongoose.Schema( {
+  name: String,
+  isbn: {type: String, index: true},
+  author: String,
+  pages: Number
+});
+var Book = mongoose.model('Book', bookSchema);
+module.exports = mongoose.model('Book', bookSchema);
+```
+
+
+
+
+#### Accessing the routes with AngularJS
+* 
 
 
 

@@ -41,6 +41,11 @@ sudo service mongodb start
 sudo systemctl status mongodb
 ```
 ![MEAN - Step 4 mongodb server started and verified](https://user-images.githubusercontent.com/116941965/211078423-fa53a318-ad43-42a4-9cda-e34108f9da98.PNG)
+* Next step is to install npm (Node Package Manager):
+```
+sudo apt install -y npm
+```
+![MEAN - Step 5 - Node package manager installed](https://user-images.githubusercontent.com/116941965/211079124-610d4225-7719-41d6-8c55-d5cd4990a042.PNG)
 
 ##### Body-parser package was installed with node package manager but I get this message:
 *npm WARN saveError ENOENT: no such file or directory, open '/home/ubuntu/package.json'

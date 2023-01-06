@@ -317,7 +317,19 @@ sudo n stable
 
 ![MEAN - Step 18b - New nodejs version](https://user-images.githubusercontent.com/116941965/211090846-a3428f5e-6c38-4be0-85ff-7be448fa2f47.PNG)
 
+* I run attempt to start node server again and I get an error implying that Express and Mongoose module could not be found:
 
+![MEAN - Step 18c - I run node server js again, and get this error](https://user-images.githubusercontent.com/116941965/211091248-892148ab-db17-4536-a646-09bfaf93cc18.PNG)
 
+It now makes sense why I was getting error when I initially tried to install Mongoose and Express. This could have been because of the version of Node I was on.
+
+* I then re-attempt the installation of Express and Mongoose and seems ok:
+
+![MEAN - Step 18e - Re-installed Express](https://user-images.githubusercontent.com/116941965/211091713-7d7271fa-bdc4-4e18-8846-be82d8e04844.PNG)
+![MEAN - Step 18f - Reinstalled Mongoose](https://user-images.githubusercontent.com/116941965/211091797-ced69513-06bb-488a-862e-3ac8c4759e12.PNG)
+
+* Then I re-attempt to start the node server and all seems ok:
+
+![MEAN - Step 18g - nodejs server up now](https://user-images.githubusercontent.com/116941965/211091922-cc2f42a0-cd6a-4185-aba6-aeea8aea361b.PNG)
 
 

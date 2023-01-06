@@ -1,7 +1,12 @@
 ### MEAN STACK DEPLOYMENT TO UBUNTU IN AWS
 
 #### Installing Nodejs:
-* I started by adding certificates as a prerequisite for installing node using:
+* Before commencing, I ensured ubuntu was up to date. So I updated and upgraded ubuntu:
+```
+sudo apt update
+sudo apt upgrade
+```
+* I added certificates as a prerequisite for installing node using:
 ```
  sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -

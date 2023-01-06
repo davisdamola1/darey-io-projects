@@ -46,13 +46,14 @@ sudo systemctl status mongodb
 sudo apt install -y npm
 ```
 ![MEAN - Step 5 - Node package manager installed](https://user-images.githubusercontent.com/116941965/211079124-610d4225-7719-41d6-8c55-d5cd4990a042.PNG)
+* Installed body-parser:
+```
+sudo npm install body-parser
+```
+The package seemed to install, however, I got these error which I wasn't sure of:
+![MEAN - Step 6 body parser installed with npm](https://user-images.githubusercontent.com/116941965/211081056-269055ee-86eb-4c08-859d-2acd922c8da9.PNG)
 
-##### Body-parser package was installed with node package manager but I get this message:
-*npm WARN saveError ENOENT: no such file or directory, open '/home/ubuntu/package.json'
-npm notice created a lockfile as package-lock.json. You should commit this file.
-npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/package.json'
-npm WARN ubuntu No description
-npm WARN ubuntu No repository field.
-npm WARN ubuntu No README data
-npm WARN ubuntu No license field*
-##### Seems to have installed however.
+
+
+
+

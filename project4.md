@@ -52,6 +52,13 @@ sudo npm install body-parser
 ```
 The package seemed to install, however, I got these error which I wasn't sure of:
 ![MEAN - Step 6 body parser installed with npm](https://user-images.githubusercontent.com/116941965/211081056-269055ee-86eb-4c08-859d-2acd922c8da9.PNG)
+* I created a 'Books' folder and initialised the npm project within the 'Books' directory:
+```
+mkdir Books && cd Books
+```
+![MEAN - Step 7 - Books directory created and npm project initialised](https://user-images.githubusercontent.com/116941965/211081787-42000c8d-0c42-4478-8eab-e0528cf11e6f.PNG)
+
+
 
 
 

@@ -57,8 +57,23 @@ The package seemed to install, however, I got these error which I wasn't sure of
 mkdir Books && cd Books
 ```
 ![MEAN - Step 7 - Books directory created and npm project initialised](https://user-images.githubusercontent.com/116941965/211081787-42000c8d-0c42-4478-8eab-e0528cf11e6f.PNG)
-
-
+* Within the 'Books' directory, I create a file server.js and added the web server code:
+```
+vi server.js
+```
+```
+var express = require('express');
+var bodyParser = require('body-parser');
+var app = express();
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json());
+require('./apps/routes')(app);
+app.set('port', 3300);
+app.listen(app.get('port'), function() {
+    console.log('Server up: http://localhost:' + app.get('port'));
+});
+```
+![MEAN - Step 8 - config file Server js added using vi server js and web server code added](https://user-images.githubusercontent.com/116941965/211082599-27a5bce7-60b2-458d-9aa9-40544d2ea23e.PNG)
 
 
 

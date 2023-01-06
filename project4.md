@@ -28,7 +28,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A1
 ```
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
 ```
-I proceeded with installing MongoDB:
+* I proceeded with installing MongoDB:
 ```
 sudo apt install -y mongodb
 ```

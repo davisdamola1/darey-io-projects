@@ -33,8 +33,14 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/
 sudo apt install -y mongodb
 ```
 ![MEAN - Step 3 - Mongo DB Installation](https://user-images.githubusercontent.com/116941965/211077782-e3c3ffd1-f5b2-4736-9346-d96af8d84ea1.PNG)
-
-
+* Once installation is complete, I start the server and verify the server is running:
+```
+sudo service mongodb start
+```
+```
+sudo systemctl status mongodb
+```
+![MEAN - Step 4 mongodb server started and verified](https://user-images.githubusercontent.com/116941965/211078423-fa53a318-ad43-42a4-9cda-e34108f9da98.PNG)
 
 ##### Body-parser package was installed with node package manager but I get this message:
 *npm WARN saveError ENOENT: no such file or directory, open '/home/ubuntu/package.json'

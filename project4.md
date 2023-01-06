@@ -81,6 +81,7 @@ sudo npm install express mongoose
 ```
 At this point, even though I had gotten errors, I thought it had installed:
 ![MEAN - Step 9 - Install express and Mongoose](https://user-images.githubusercontent.com/116941965/211083885-edefdcaa-8289-4b91-8547-162e8dbf2301.PNG)
+
 I found out reason in later steps (Keep reading!).
 * Within the 'Books' directory, I created 'apps' folder. Within the 'apps' folder, I added a file named route.js and added code:
 ```

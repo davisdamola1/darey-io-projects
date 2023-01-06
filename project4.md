@@ -153,7 +153,7 @@ module.exports = mongoose.model('Book', bookSchema);
 ![MEAN - Step 10 - apps directory created and routes js file created in apps](https://user-images.githubusercontent.com/116941965/211085215-5cbbb6e3-5bb2-4c0d-9291-febc241dd734.PNG)
 ![MEAN - Step 11 - code added to routes js file](https://user-images.githubusercontent.com/116941965/211085296-ea9b1610-1c33-41cf-8be3-14a20e45553a.PNG)
 
-* Within the 'apps' folder, I created a folder named 'models'. Within the 'models' folder, I added a file name book.js and added code:
+* Within the 'apps' folder, I created a folder named 'models'. Within the 'models' folder, I added a file named book.js and added code:
 ```
 mkdir models && cd models
 ```
@@ -180,7 +180,57 @@ module.exports = mongoose.model('Book', bookSchema);
 
 
 #### Accessing the routes with AngularJS
-* 
+* Within the *Books* folder, I created a folder named *public*, then added a file named *script.js* which code was added to:
+```
+mkdir public && cd public
+```
+```
+vi script.js
+```
+```
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http( {
+    method: 'GET',
+    url: '/book'
+  }).then(function successCallback(response) {
+    $scope.books = response.data;
+  }, function errorCallback(response) {
+    console.log('Error: ' + response);
+  });
+  $scope.del_book = function(book) {
+    $http( {
+      method: 'DELETE',
+      url: '/book/:isbn',
+      params: {'isbn': book.isbn}
+    }).then(function successCallback(response) {
+      console.log(response);
+    }, function errorCallback(response) {
+      console.log('Error: ' + response);
+    });
+  };
+  $scope.add_book = function() {
+    var body = '{ "name": "' + $scope.Name + 
+    '", "isbn": "' + $scope.Isbn +
+    '", "author": "' + $scope.Author + 
+    '", "pages": "' + $scope.Pages + '" }';
+    $http({
+      method: 'POST',
+      url: '/book',
+      data: body
+    }).then(function successCallback(response) {
+      console.log(response);
+    }, function errorCallback(response) {
+      console.log('Error: ' + response);
+    });
+  };
+});
+```
+![MEAN - Step 14 - public folder created in books directory and script js file added](https://user-images.githubusercontent.com/116941965/211088007-92f6237b-9fcd-40cb-8484-b12787294675.PNG)
+![MEAN - Step 15 - code added to script js file](https://user-images.githubusercontent.com/116941965/211088079-03666b88-0290-4cac-9b07-cae9ff07d078.PNG)
+
+
+
 
 
 

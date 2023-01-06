@@ -1,5 +1,7 @@
 ### MEAN STACK DEPLOYMENT TO UBUNTU IN AWS
 
+The task was to implement a simple Book Register web form using MEAN stack
+
 #### Installing Nodejs:
 * Before commencing, I ensured ubuntu was up to date. So I updated and upgraded ubuntu:
 ```
@@ -332,4 +334,13 @@ It now makes sense why I was getting error when I initially tried to install Mon
 
 ![MEAN - Step 18g - nodejs server up now](https://user-images.githubusercontent.com/116941965/211091922-cc2f42a0-cd6a-4185-aba6-aeea8aea361b.PNG)
 
+* The server is now up and running, I attempt to connect it via port 3300.
+```
+curl -s http://localhost:3300
+```
+![MEAN - Step 19 - Running curl locally brings back this html page but not readable](https://user-images.githubusercontent.com/116941965/211092066-b78d5b3b-a374-4b53-b391-c62869587a50.PNG)
+
+* Opened in web browser with public ipv4:
+
+![MEAN - Step 19b - Application now running in web](https://user-images.githubusercontent.com/116941965/211092151-992cc499-53be-4d38-a270-e955e674178c.PNG)
 

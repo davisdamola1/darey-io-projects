@@ -19,6 +19,15 @@ sudo apt install -y nodejs
 ```
 ![MEAN - Step 2 - Install Nodejs](https://user-images.githubusercontent.com/116941965/211075270-e7bae615-cfe9-4327-b8d0-ee79a4a25a6e.PNG)
 
+#### Installing MongoDB
+* Before installing MongoDB, I had to import the public key for MongoDB:
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+```
+* I also had to add MongoDB’s APT repository to the /etc/apt/sources.list.d directory:
+```
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+```
 
 
 ##### Body-parser package was installed with node package manager but I get this message:

@@ -8,6 +8,11 @@
  ```
  ![MEAN - Step 1 - Add Certificates](https://user-images.githubusercontent.com/116941965/211064623-73bd5694-4277-483e-b779-b565060b78d4.PNG)
  
+ * Then I installed NodeJS using:
+```
+sudo apt install -y nodejs
+```
+
 
 ##### Body-parser package was installed with node package manager but I get this message:
 *npm WARN saveError ENOENT: no such file or directory, open '/home/ubuntu/package.json'

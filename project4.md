@@ -229,7 +229,63 @@ app.controller('myCtrl', function($scope, $http) {
 ![MEAN - Step 14 - public folder created in books directory and script js file added](https://user-images.githubusercontent.com/116941965/211088007-92f6237b-9fcd-40cb-8484-b12787294675.PNG)
 ![MEAN - Step 15 - code added to script js file](https://user-images.githubusercontent.com/116941965/211088079-03666b88-0290-4cac-9b07-cae9ff07d078.PNG)
 
+* Within the *public* folder, I then added a index.html file and added code:
+```
+vi index.html
+```
+```
+<!doctype html>
+<html ng-app="myApp" ng-controller="myCtrl">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" ng-model="Name"></td>
+        </tr>
+        <tr>
+          <td>Isbn:</td>
+          <td><input type="text" ng-model="Isbn"></td>
+        </tr>
+        <tr>
+          <td>Author:</td>
+          <td><input type="text" ng-model="Author"></td>
+        </tr>
+        <tr>
+          <td>Pages:</td>
+          <td><input type="number" ng-model="Pages"></td>
+        </tr>
+      </table>
+      <button ng-click="add_book()">Add</button>
+    </div>
+    <hr>
+    <div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Isbn</th>
+          <th>Author</th>
+          <th>Pages</th>
 
+        </tr>
+        <tr ng-repeat="book in books">
+          <td>{{book.name}}</td>
+          <td>{{book.isbn}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.pages}}</td>
+
+          <td><input type="button" value="Delete" data-ng-click="del_book(book)"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+```
+![MEAN - Step 16 - index html file created in public folder and code added](https://user-images.githubusercontent.com/116941965/211088384-4f19f79b-2ccd-43a4-958b-16dc4215c031.PNG)
 
 
 

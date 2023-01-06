@@ -50,7 +50,7 @@ sudo apt install -y npm
 ```
 sudo npm install body-parser
 ```
-The package seemed to install, however, I got these error which I wasn't sure of:
+The package seemed to install, however, I got these error which I wasn't sure of, but found out the cause in later steps:
 ![MEAN - Step 6 body parser installed with npm](https://user-images.githubusercontent.com/116941965/211081056-269055ee-86eb-4c08-859d-2acd922c8da9.PNG)
 * I created a 'Books' folder and initialised the npm project within the 'Books' directory:
 ```
@@ -74,6 +74,16 @@ app.listen(app.get('port'), function() {
 });
 ```
 ![MEAN - Step 8 - config file Server js added using vi server js and web server code added](https://user-images.githubusercontent.com/116941965/211082599-27a5bce7-60b2-458d-9aa9-40544d2ea23e.PNG)
+#### Installing Express and Setting up routes to the server
+* I installed Express, which will be used to pass book information to and from our MongoDB database. Also installed Mongoose package which we will use to establish a schema for the database to store data of our book register:
+```
+sudo npm install express mongoose
+```
+At this point, even though I had gotten errors, I thought it had installed:
+![MEAN - Step 9 - Install express and Mongoose](https://user-images.githubusercontent.com/116941965/211083885-edefdcaa-8289-4b91-8547-162e8dbf2301.PNG)
+I found out reason in later steps (Keep reading!).
+
+
 
 
 

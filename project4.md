@@ -287,6 +287,35 @@ vi index.html
 ```
 ![MEAN - Step 16 - index html file created in public folder and code added](https://user-images.githubusercontent.com/116941965/211088384-4f19f79b-2ccd-43a4-958b-16dc4215c031.PNG)
 
+* Next step was to start node server:
+```
+node server.js
+```
+This is when I realised there was something wrong, when I got this error whilst trying to start the server:
+
+![MEAN - Step 17 - Error when starting node server](https://user-images.githubusercontent.com/116941965/211088947-08f2d458-7457-43dd-aea1-7b811f2319ea.PNG)
+
+After troubleshooting, I found out this occurs in node 10 or version only.
+
+* To start with, I checked the current version of node installed:
+```
+node --version
+```
+The version was v10.19.0, so needed updating.
+
+* I then used npm to install a node version manager called **n**:
+``
+sudo npm install -g n
+```
+* Then I proceeded to install stable version of node:
+```
+sudo n stable
+```
+![MEAN - Step 18a - Had to install latest version of nodejs](https://user-images.githubusercontent.com/116941965/211090549-28a1abde-b2b1-416b-b16d-20b4c4ea838e.PNG)
+
+* Now version of node is now *v18.13.0*:
+
+![MEAN - Step 18b - New nodejs version](https://user-images.githubusercontent.com/116941965/211090846-a3428f5e-6c38-4be0-85ff-7be448fa2f47.PNG)
 
 
 

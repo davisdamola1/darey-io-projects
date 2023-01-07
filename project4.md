@@ -306,14 +306,13 @@ node --version
 The version was v10.19.0, so needed updating.
 
 * I then used npm to install a node version manager called **n**:
-``
+```
 sudo npm install -g n
 ```
 * Then I proceeded to install stable version of node:
-
-```sudo n stable
 ```
-
+sudo n stable
+```
 ![MEAN - Step 18a - Had to install latest version of nodejs](https://user-images.githubusercontent.com/116941965/211150377-644325b9-4fde-49c9-a242-4300e7660249.PNG)
 
 * Now version of node is now *v18.13.0*:

@@ -310,10 +310,11 @@ The version was v10.19.0, so needed updating.
 sudo npm install -g n
 ```
 * Then I proceeded to install stable version of node:
+
+```sudo n stable
 ```
-sudo n stable
-```
-![MEAN - Step 18a - Had to install latest version of nodejs](https://user-images.githubusercontent.com/116941965/211090549-28a1abde-b2b1-416b-b16d-20b4c4ea838e.PNG)
+
+![MEAN - Step 18a - Had to install latest version of nodejs](https://user-images.githubusercontent.com/116941965/211150377-644325b9-4fde-49c9-a242-4300e7660249.PNG)
 
 * Now version of node is now *v18.13.0*:
 
@@ -335,12 +336,15 @@ It now makes sense why I was getting error when I initially tried to install Mon
 ![MEAN - Step 18g - nodejs server up now](https://user-images.githubusercontent.com/116941965/211091922-cc2f42a0-cd6a-4185-aba6-aeea8aea361b.PNG)
 
 * The server is now up and running, I attempt to connect it via port 3300.
+
 ```
 curl -s http://localhost:3300
 ```
+
 ![MEAN - Step 19 - Running curl locally brings back this html page but not readable](https://user-images.githubusercontent.com/116941965/211092066-b78d5b3b-a374-4b53-b391-c62869587a50.PNG)
 
 * Opened in web browser with public ipv4:
+
 
 ![MEAN - Step 19b - Application now running in web](https://user-images.githubusercontent.com/116941965/211092151-992cc499-53be-4d38-a270-e955e674178c.PNG)
 

@@ -29,7 +29,7 @@ mv onboard.sh ~/Shell
 ![Shell - Step 2 - Created a new folder called Shell and added names csv file](https://user-images.githubusercontent.com/116941965/211260446-d64192f8-df7b-4812-87da-e09b364a801f.PNG)
 ![Shell - Step 2b - Also moved the onboard sh into Shell folder](https://user-images.githubusercontent.com/116941965/211260533-041fcab3-972b-41b3-8293-6b5169929145.PNG)
 
-I created files for private and public keys and used the vi editor to add the private key and public key details to them:
+* I created files for private and public keys and used the vi editor to add the private key and public key details to them:
 ```
 touch id_rsa id_rsa.pub
 ```
@@ -43,6 +43,25 @@ vi id_rsa.pub
 ![Shell - Step 4 - Added public key to public key file](https://user-images.githubusercontent.com/116941965/211261152-afd7c4c5-6117-4807-b3ac-d09237ddb195.PNG)
 ![Shell - Step 4b - Add private key to private key file](https://user-images.githubusercontent.com/116941965/211261205-18ce9eb9-7020-4f14-aeba-3501bfcdd005.PNG)
 
+* I created a group called *developers* which the users would be added to automatically when the script is exexcuted:
+```
+sudo groupadd developers
+```
+![Shell - Step 5 - Created developers group](https://user-images.githubusercontent.com/116941965/211261670-7cec243a-dc29-43c1-945e-5687cf3dad84.PNG)
+
+* I modified permissions to make the script **onboard.sh** executable, then I executed it superuser mode, which was successful:
+```
+sudo chmod +x onboard.sh
+```
+```
+sudo su
+```
+```
+./onboard.sh
+```
+![Shell - Step 6 - Make the onboard sh script executable](https://user-images.githubusercontent.com/116941965/211262264-8c8b3a43-3a37-45e6-a1ba-9d9cbd29e979.PNG)
+![Shell - Step 7 - Had to swtich to superuser to execute script, only admin can](https://user-images.githubusercontent.com/116941965/211262310-fd3dd72d-7986-4d5f-bc6e-31d0e2f88e11.PNG)
+![Shell - Step 8 - Onboard sh successfully executed](https://user-images.githubusercontent.com/116941965/211262376-5c326dd1-7329-49d3-9fdb-01823ef6aa4e.PNG)
 
 
 

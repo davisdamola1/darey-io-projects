@@ -39,10 +39,6 @@ vi id_rsa
 ```
 vi id_rsa.pub
 ```
-![Shell - step 3 - created file for private and public key](https://user-images.githubusercontent.com/116941965/211261104-6dc8f22a-88ad-4410-b24e-468bf7c8648b.PNG)
-![Shell - Step 4 - Added public key to public key file](https://user-images.githubusercontent.com/116941965/211261152-afd7c4c5-6117-4807-b3ac-d09237ddb195.PNG)
-![Shell - Step 4b - Add private key to private key file](https://user-images.githubusercontent.com/116941965/211261205-18ce9eb9-7020-4f14-aeba-3501bfcdd005.PNG)
-
 * I created a group called *developers* which the users would be added to automatically when the script is exexcuted:
 ```
 sudo groupadd developers
@@ -83,9 +79,18 @@ cat /etc/passwd | awk -F':' '{ print $1}' | xargs -n1 groups
 ![Shell - Step 10d - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211264413-db277b2e-fd39-4ab7-bcd2-fefb8f8aae0b.PNG)
 
 * Next step was test that the onboarding was successfully by attempting to connect to a few users. I tested this on 2 users named **Ana** and **Bana**.
-* In order for me to connect remotely to these users, I had to create a private key file locally called *aux-proj.pem* and add the private key details that was added to the server for these users:
-![Shell - Step 11 - Test - created a private key file called aux-proj pem](https://user-images.githubusercontent.com/116941965/211265051-3d45d52e-9d26-45ac-b39e-6b0e638f4ca6.PNG)
-
+* In order for me to connect remotely to these users, I had to create a private key file locally called *aux-proj.pem* and add the private key details that was added to the server for these users. I made sure the permissions for the private key file was updated to prevent others from accessing it using *Chmod 600*.
+* I then attempted to connect to the 2 users and it was successful:
+``` 
+scp -i aux-proj.pem Ana@107.21.86.210
+```
+```
+scp -i aux-proj.pem Bana@107.21.86.210
+```
+![Shell - Step 11b - Test - Successfully connected to user on server](https://user-images.githubusercontent.com/116941965/211266537-f7070bca-491a-4795-abd9-e11b2617d464.PNG)
+![Shell - Step 11c - Test - Successfully connected to user on server](https://user-images.githubusercontent.com/116941965/211266329-dec026da-4304-46a0-9aa2-dcfe83987ba2.PNG)
+![Shell - Step 11d - Test - Successfully connected to user on server](https://user-images.githubusercontent.com/116941965/211266386-7e79abfb-f673-42d7-abab-e807e81d6e92.PNG)
+![Shell - Step 11e - Test - Successfully connected to user on server](https://user-images.githubusercontent.com/116941965/211266708-e453666f-f46c-4d62-8399-ff3263f7a500.PNG)
 
 
 

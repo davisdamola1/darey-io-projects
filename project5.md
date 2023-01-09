@@ -48,6 +48,7 @@ vi id_rsa.pub
 sudo groupadd developers
 ```
 ![Shell - Step 5 - Created developers group](https://user-images.githubusercontent.com/116941965/211261670-7cec243a-dc29-43c1-945e-5687cf3dad84.PNG)
+![Shell - Step 9 - Developers group id](https://user-images.githubusercontent.com/116941965/211262916-9c7e4ee5-85d3-43fc-a74c-4b0cb4bf0881.PNG)
 
 * I modified permissions to make the script **onboard.sh** executable, then I executed it superuser mode, which was successful:
 ```
@@ -62,6 +63,12 @@ sudo su
 ![Shell - Step 6 - Make the onboard sh script executable](https://user-images.githubusercontent.com/116941965/211262264-8c8b3a43-3a37-45e6-a1ba-9d9cbd29e979.PNG)
 ![Shell - Step 7 - Had to swtich to superuser to execute script, only admin can](https://user-images.githubusercontent.com/116941965/211262310-fd3dd72d-7986-4d5f-bc6e-31d0e2f88e11.PNG)
 ![Shell - Step 8 - Onboard sh successfully executed](https://user-images.githubusercontent.com/116941965/211262376-5c326dd1-7329-49d3-9fdb-01823ef6aa4e.PNG)
+
+* I confirmed to see if the users were created successfully:
+```
+ls -l /home/
+```
+![Shell - Step 8b - proof all the users have been created using ls -l](https://user-images.githubusercontent.com/116941965/211262684-5604c9b8-77e0-44c4-b9b0-d35c72a93124.PNG)
 
 
 

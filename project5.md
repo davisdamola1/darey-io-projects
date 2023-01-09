@@ -70,5 +70,17 @@ ls -l /home/
 ```
 ![Shell - Step 8b - proof all the users have been created using ls -l](https://user-images.githubusercontent.com/116941965/211262684-5604c9b8-77e0-44c4-b9b0-d35c72a93124.PNG)
 
+* I also confirmed to see if the users were added to the *developers* group (id 1001) successfully checking in /etc/passwd which is where all users and passwords are stored. Also used *awk* command to filter for this information:
+```
+cat /etc/passwd
+```
+```
+cat /etc/passwd | awk -F':' '{ print $1}' | xargs -n1 groups
+```
+![Shell - Step 10 - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211263173-b6e05010-0df1-4aac-a601-3b7eebcdee0b.PNG)
+![Shell - Step 10b - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211263645-486d2424-b745-4343-b100-689f49cc2f25.PNG)
+![Shell - Step 10c - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211264352-297d6b7b-b7b5-4b68-9dbe-c81847da983f.PNG)
+![Shell - Step 10d - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211264413-db277b2e-fd39-4ab7-bcd2-fefb8f8aae0b.PNG)
+
 
 

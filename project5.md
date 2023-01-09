@@ -82,5 +82,10 @@ cat /etc/passwd | awk -F':' '{ print $1}' | xargs -n1 groups
 ![Shell - Step 10c - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211264352-297d6b7b-b7b5-4b68-9dbe-c81847da983f.PNG)
 ![Shell - Step 10d - Users have been added to developers group](https://user-images.githubusercontent.com/116941965/211264413-db277b2e-fd39-4ab7-bcd2-fefb8f8aae0b.PNG)
 
+* Next step was test that the onboarding was successfully by attempting to connect to a few users. I tested this on 2 users named **Ana** and **Bana**.
+* In order for me to connect remotely to these users, I had to create a private key file locally called *aux-proj.pem* and add the private key details that was added to the server for these users:
+![Shell - Step 11 - Test - created a private key file called aux-proj pem](https://user-images.githubusercontent.com/116941965/211265051-3d45d52e-9d26-45ac-b39e-6b0e638f4ca6.PNG)
+
+
 
 
